@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 - hosts: all
   become: True
   tasks:
@@ -11,4 +12,13 @@
   - name: create user
     user:
       name: cristine
+=======
+- name: install python
+  hosts: cristine
+  become: yes
+  tasks:
+    - name: install python
+    package:
+      name: python
+>>>>>>> 6d6be3bfb396d23480e6b0b679e45a3c39802260
       state: present
