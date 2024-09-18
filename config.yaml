@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: True
+  tasks:
+
+  - name: echo cat message
+    copy:
+      content: Ansible managed node by cristine
+      dest: /home/cristine/motd
+
+  - name: create user
+    user:
+      name: cristine
+      state: present
