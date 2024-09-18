@@ -1,0 +1,9 @@
+---
+- name: install python
+  hosts: cristine
+  become: yes
+  tasks:
+    - name: install python
+    package:
+      name: python
+      state: present
